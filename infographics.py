@@ -12,6 +12,8 @@ COUNTRY_NAMES = [
     "Togo","Afghanistan","Finland","Norway","Switzerland",
     ]
 
+YEARS = [2018,2019,2020]
+
 year = 2020
 width = 0.10
 
@@ -54,7 +56,10 @@ def Hbar(pivot_df):
 	plt.show()
 
 
-df_filtered_dystopia = df_filtered[["Country","dystopia_residual"]]
+
+# !!!!!!!!!!!!!!!!!! add code to make % 100 using others apart from the selected countries.!!!!!!!!!!!!!!1
+df_filtered_dystopia = df_filtered[df_filtered['Year'] == 2020][["Country", "dystopia_residual"]]
+
 
 def PlotPie(pivot_df):
 	plt.pie(pivot_df["dystopia_residual"],labels = pivot_df["Country"],autopct='%1.1f%%', startangle=140)
