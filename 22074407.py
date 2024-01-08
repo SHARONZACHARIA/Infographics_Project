@@ -151,7 +151,7 @@ for text in legend.get_texts():
     text.set_fontweight('bold')
 legend.get_title().set_fontweight('bold')
 
-
+# Adding desription text
 description_text = """ 
 - The dashboard analyses the World Happiness Index For  2015 - 2020
 
@@ -178,5 +178,6 @@ fig.text(0.06, -0.4, description_text, fontsize=18,
          bbox=dict(facecolor='#FFFFFF'), color="#030D17")
 plt.tight_layout(pad=4.0, h_pad=6.0, w_pad=2.0)
 plt.subplots_adjust(left=0.11, right=0.95, top=0.9, bottom=0.12)
+#save figure 
 plt.savefig('22074407.png', dpi=300, bbox_inches='tight')
 
