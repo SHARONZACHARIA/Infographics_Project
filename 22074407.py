@@ -141,7 +141,7 @@ axes[1, 1].tick_params(axis='both')  # Remove individual legend
 
 handles, labels = axes[0, 0].get_legend_handles_labels()
 
-# Create a legend using the handles and labels obtained
+# legend using the handles and labels obtained
 legend = fig.legend(handles, labels, title='Countries', bbox_to_anchor=(0.7, -0.000009),
                     ncol=len(COUNTRY_NAMES), facecolor='white', framealpha=1, fontsize=20,
                     borderpad=1.5, handletextpad=1.2, labelspacing=1.2)
@@ -150,6 +150,7 @@ legend = fig.legend(handles, labels, title='Countries', bbox_to_anchor=(0.7, -0.
 for text in legend.get_texts():
     text.set_fontweight('bold')
 legend.get_title().set_fontweight('bold')
+legend.get_title().set_fontsize('20')
 
 # Adding description text
 description_text = """ 
@@ -159,18 +160,18 @@ description_text = """
   overall wellbeing and happiness of the citizens of these countires.
 
 - Countries like switzerland , Norway and Finland score higher happiness index which is above 7 points for all the years and Countries like Tongo and Afganistan have 
-  happiness index below 4 points  from  2015 - 2020. Happiness Index of Afaghanistan has reduced from 3.8 to 2.8 over the years.
+  happiness index below 4 points  from  2015 - 2020. Happiness Index of Afaghanistan has reduced from 3.8 to 2.8 over the years. (Fig 1)
     
 - Corruption Perception Index (CPI) score influences  the happiness index of each country since countries with higher CPI score has higher Happiness Index. People are
   happy where lower corruption is  reported than those countries with higher corruption rate.  eg: Finland being the happiest country has maintained a high CPI score through 
-  out these years and Afghanistan being least happiest country has low CPI values compared to other 4 countries.
+  out these years and Afghanistan being least happiest country has low CPI values compared to other 4 countries. (Fig 2)
 
 - Dystopia is an imaginary country that has the world’s least-happy people, Here we analyse Dystopia for the 2020 and Finland  is the happiest country  with 24.67 % 
-  while Afghanistan being the least happy country with 13.46%.
+  while Afghanistan being the least happy country with 13.46%. (Fig 3)
 
 - Countries with Higher rate for freedom shows a greater Happiness index eg: The Freedom in the top three countries with higher happiness index is higher and is 
   above 0.6 for all the years under analysis. Countries like Afganisthan and Tongo have low freedom (less than 0.45 ) which inturn affects the overall happiness index of 
-  those countries negativly.
+  those countries negativly. (Fig 4)
 
   """
 
