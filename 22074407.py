@@ -151,7 +151,7 @@ for text in legend.get_texts():
     text.set_fontweight('bold')
 legend.get_title().set_fontweight('bold')
 
-# Adding desription text
+# Adding description text
 description_text = """ 
 - The dashboard analyses the World Happiness Index For  2015 - 2020
 
